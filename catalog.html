@@ -41,7 +41,7 @@
 
     <nav>
       <ul>
-        <li><a href="blank.html">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="blank.html">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="blank.html">Новости</a></li>
@@ -54,7 +54,7 @@
 
   <main>
 
-    <ul>
+    <ul class="breadcrumbs">
       <li><a href="index.html">На главную</a></li>
       <li><a href="blank.html">Каталог</a></li>
       <li><a href="blank.html">Инструмент</a></li>
@@ -63,14 +63,62 @@
 
     <h1>Перфораторы</h1>
 
-    <form>
-      <!-- Форма Фильтр -->
-    </form>
+    <section>
+      <h2>Фильтр</h2>
+      <form action="https://echo.htmlacademy.ru/" oninput="bottomoutput.value=bottom.value; topoutput.value=top.value">
+        <fieldset>
+          <legend>Цена:</legend>
+          <input type="range" id="bottom" name="bottom" min="0" max="35000" value="0">
+          <input type="range" id="top" name="top" min="0" max="35000" value="30000">
+          <output name="bottomoutput">0</output> -
+          <output name="topoutput">30000</output>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <input type="checkbox" id="Bosch" name="Bosch" checked>
+          <label for="Bosch">Bosch</label>
+          <input type="checkbox" id="Interscol" name="Interscol">
+          <label for="Interscol">Интерскол</label>
+          <input type="checkbox" id="Makita" name="Makita" checked>
+          <label for="Makita">Makita</label>
+          <input type="checkbox" id="DeWalt" name="DeWalt">
+          <label for="DeWalt">DeWalt</label>
+          <input type="checkbox" id="Hitachi" name="Hitachi">
+          <label for="Hitachi">Hitachi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <input type="radio" id="battery" name="power-supply" value="battery" checked>
+          <label for="battery">Аккумуляторные</label>
+          <input type="radio" id="network" name="power-supply" value="network">
+          <label for="network">Сетевые</label>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
 
     <section>
       <h2>Каталог перфораторов</h2>
       <form>
-        <!-- Сортирока -->
+        <h3>Сортировка</h3>
+        <!-- Тип сортировки -->
+        <fieldset>
+          <input type="radio" id="price" name="sorting-type" value="price" checked>
+          <label for="price">По цене</label>
+          <input type="radio" id="type" name="sorting-type" value="type">
+          <label for="type">По типу</label>
+          <input type="radio" id="functionality" name="sorting-type" value="functionality">
+          <label for="functionality">По функционалу</label>
+        </fieldset>
+
+        <!-- Порядок сортировки -->
+        <fieldset>
+          <input type="radio" id="up-down" name="sorting-order" value="up-down" checked>
+          <label for="up-down">Снизу вверх</label>
+          <input type="radio" id="down-up" name="sorting-order" value="down-up">
+          <label for="down-up">Сверху вниз</label>
+        </fieldset>
       </form>
 
       <ul>
@@ -193,11 +241,26 @@
         </li>
       </ul>
 
+      <div class="paging">
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button">Следующая</button>
+      </div>
+
     </section>
 
-    <section>
-      <!-- О перфораторах -->
-    </section>
+    <article>
+      <h2>Пара слов о перфораторах</h2>
+      <p>
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+        дрель.
+      </p>
+    </article>
 
   </main>
 
