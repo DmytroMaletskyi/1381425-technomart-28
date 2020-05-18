@@ -100,26 +100,27 @@
 
     <section>
       <h2>Каталог перфораторов</h2>
-      <form>
-        <h3>Сортировка</h3>
-        <!-- Тип сортировки -->
-        <fieldset>
-          <input type="radio" id="price" name="sorting-type" value="price" checked>
-          <label for="price">По цене</label>
-          <input type="radio" id="type" name="sorting-type" value="type">
-          <label for="type">По типу</label>
-          <input type="radio" id="functionality" name="sorting-type" value="functionality">
-          <label for="functionality">По функционалу</label>
-        </fieldset>
 
-        <!-- Порядок сортировки -->
-        <fieldset>
-          <input type="radio" id="up-down" name="sorting-order" value="up-down" checked>
-          <label for="up-down">Снизу вверх</label>
-          <input type="radio" id="down-up" name="sorting-order" value="down-up">
-          <label for="down-up">Сверху вниз</label>
-        </fieldset>
-      </form>
+      <div class="sorting">
+        <h3>Сортировка</h3>
+        <ul class="sorting-type">
+          <li>
+            <a href="">По цене</a>
+          </li>
+          <li>
+            <a href="">По типу</a>
+          </li>
+          <li>
+            <a href="">По функционалу</a>
+          </li>
+          <li>
+            <a href="">Снизу вверз</a>
+          </li>
+          <li>
+            <a href="">Сверху вниз</a>
+          </li>
+        </ul>
+      </div>
 
       <ul>
         <li>
@@ -241,12 +242,20 @@
         </li>
       </ul>
 
-      <div class="paging">
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">Следующая</button>
-      </div>
+      <ul class="paging">
+        <li>
+          <a href="">1</a>
+        </li>
+        <li>
+          <a href="">2</a>
+        </li>
+        <li>
+          <a href="">3</a>
+        </li>
+        <li>
+          <a href="">Следующая</a>
+        </li>
+      </ul>
 
     </section>
 
