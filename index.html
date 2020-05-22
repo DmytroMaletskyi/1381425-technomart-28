@@ -10,20 +10,28 @@
   <header class="main-header">
 
     <div class="top-menu">
-      <a><img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт"></a>
-      <label for="search">Поиск:</label>
-      <input type="search" id="search" name="search">
-      <label for="bookmarks">Закладки:</label>
-      <output id="bookmarks" name="bookmarks">0</output>
-      <label for="cart">Корзина:</label>
-      <output id="cart" name="cart">0</output>
+      <a>
+        <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт">
+      </a>
+      <p>
+        <label for="search">Поиск:</label>
+        <input type="search" id="search" name="search">
+      </p>
+      <p>
+        <label for="bookmarks">Закладки:</label>
+        <output id="bookmarks" name="bookmarks">0</output>
+      </p>
+      <p>
+        <label for="cart">Корзина:</label>
+        <output id="cart" name="cart">0</output>
+      </p>
       <a href="">Оформить заказ</a>
     </div>
 
     <p><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
 
     <section>
-      <h2>Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
       <p>
         <span class="phone-number">+7 (812) 555-55-55</span><br>
         г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
@@ -31,7 +39,7 @@
     </section>
 
     <section>
-      <h2>Вход</h2>
+      <h2 class="visually-hidden">Вход</h2>
       <a href="">Войти</a>
       <a href="">Регистрация</a>
     </section>
@@ -51,10 +59,10 @@
 
   <main>
 
-    <h1>Магазин строительных материалов и инструментов «Техномарт»</h1>
+    <h1 class="visually-hidden">Магазин строительных материалов и инструментов «Техномарт»</h1>
 
     <section>
-      <h2>Промо</h2>
+      <h2 class="visually-hidden">Промо</h2>
       <ul>
         <li>
           <div>
@@ -203,42 +211,42 @@
 
       <ul>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании Bosch">
             <img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании Makita">
             <img src="img/makita.png" width="123" height="40" alt="Логотип Makita">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании DeWALT">
             <img src="img/dewalt.png" width="146" height="44" alt="Логотип DeWALT">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании Интерскол">
             <img src="img/interscol.png" width="200" height="88" alt="Логотип Интерскол">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании Hitachi">
             <img src="img/hitachi.png" width="169" height="31" alt="Логотип Hitachi">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании LG">
             <img src="img/lg.png" width="121" height="73" alt="Логотип LG">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании AEG">
             <img src="img/aeg.png" width="151" height="96" alt="Логотип AEG">
           </a>
         </li>
         <li>
-          <a href="blank.html">
+          <a href="blank.html" aria-label="Товары компании Metabo">
             <img src="img/metabo.png" width="204" height="69" alt="Логотип Metabo">
           </a>
         </li>
@@ -296,7 +304,7 @@
             <p>Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a href="blank.html">Отправить заявку</a>
+            <button type="button">Отправить заявку</button>
             <img src="https://via.placeholder.com/465x285" alt="Деньги">
           </article>
         </div>
@@ -316,7 +324,7 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="">Подробнее о компании</a>
+      <a href="blank.html">Подробнее о компании</a>
     </section>
 
     <section>
@@ -324,6 +332,43 @@
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
       <img src="img/map.png" width="300" height="158" alt="Карта с адресом магазина (Большая Конюшенная ул., 19)">
       <button type="button">Заблудились? Напишите нам!</button>
+    </section>
+
+    <!-- Popup Map -->
+    <section class="popup visually-hidden">
+      <h2 class="visually-hidden">Карта</h2>
+
+      <button type="button" aria-label="Закрыть форму">
+        <img src="img/icon-cross.svg" alt="X">
+      </button>
+
+      <img src="img/map-big.png" alt="Карта с адресом магазина (Большая Конюшенная ул., 19)">
+    </section>
+
+    <!-- Popup Contact Us -->
+    <section class="popup visually-hidden">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+
+      <button type="button" aria-label="Закрыть форму">
+        <img src="img/icon-cross.svg" alt="X">
+      </button>
+
+      <form action="https://echo.htmlacademy.ru/" method="POST">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter">Текст письма:</label>
+          <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Оформить заказ</button>
+      </form>
+
     </section>
 
   </main>
@@ -347,7 +392,7 @@
       </ul>
 
       <section>
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
           +7 (812) 555-55-55
@@ -361,7 +406,7 @@
         Все права защищены
       </p>
       <section>
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social">
           <li>
             <a href="#">Вконтакте</a>
