@@ -10,20 +10,28 @@
   <header class="main-header">
 
     <div class="top-menu">
-      <a href="index.html"><img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт"></a>
-      <label for="search">Поиск:</label>
-      <input type="search" id="search" name="search">
-      <label for="bookmarks">Закладки:</label>
-      <output id="bookmarks" name="bookmarks">0</output>
-      <label for="cart">Корзина:</label>
-      <output id="cart" name="cart">10</output>
+      <a href="index.html" aria-label="На главную страницу">
+        <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт">
+      </a>
+      <p>
+        <label for="search">Поиск:</label>
+        <input type="search" id="search" name="search">
+      </p>
+      <p>
+        <label for="bookmarks">Закладки:</label>
+        <output id="bookmarks" name="bookmarks">0</output>
+      </p>
+      <p>
+        <label for="cart">Корзина:</label>
+        <output id="cart" name="cart">0</output>
+      </p>
       <a href="">Оформить заказ</a>
     </div>
 
     <p><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
 
     <section>
-      <h2>Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
       <p>
         <span class="phone-number">+7 (812) 555-55-55</span><br>
         г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
@@ -31,7 +39,7 @@
     </section>
 
     <section>
-      <h2>Авторизированный пользователь</h2>
+      <h2 class="visually-hidden">Авторизированный пользователь</h2>
       <a href="blank.html">Профиль пользователя</a>
       <a href="blank.html">Равшан Джамшутович</a>
       <a href="blank.html">Выход</a>
@@ -65,33 +73,54 @@
 
     <section>
       <h2>Фильтр</h2>
-      <form action="https://echo.htmlacademy.ru/" oninput="bottomoutput.value=bottom.value; topoutput.value=top.value">
+      <form action="https://echo.htmlacademy.ru/" method="GET"
+        oninput="bottomoutput.value=bottom.value; topoutput.value=top.value">
         <fieldset>
           <legend>Цена:</legend>
+          <label class="visually-hidden" for="bottom">Установка нижней черты ценового диапазона</label>
           <input type="range" id="bottom" name="bottom" min="0" max="35000" value="0">
+          <label class="visually-hidden" for="top">Установка верхней черты ценового диапазона</label>
           <input type="range" id="top" name="top" min="0" max="35000" value="30000">
           <output name="bottomoutput">0</output> -
           <output name="topoutput">30000</output>
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
-          <input type="checkbox" id="Bosch" name="Bosch" checked>
-          <label for="Bosch">Bosch</label>
-          <input type="checkbox" id="Interscol" name="Interscol">
-          <label for="Interscol">Интерскол</label>
-          <input type="checkbox" id="Makita" name="Makita" checked>
-          <label for="Makita">Makita</label>
-          <input type="checkbox" id="DeWalt" name="DeWalt">
-          <label for="DeWalt">DeWalt</label>
-          <input type="checkbox" id="Hitachi" name="Hitachi">
-          <label for="Hitachi">Hitachi</label>
+          <ul>
+            <li>
+              <input type="checkbox" id="Bosch" name="Bosch" checked>
+              <label for="Bosch">Bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Interscol" name="Interscol">
+              <label for="Interscol">Интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Makita" name="Makita" checked>
+              <label for="Makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" id="DeWalt" name="DeWalt">
+              <label for="DeWalt">DeWalt</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Hitachi" name="Hitachi">
+              <label for="Hitachi">Hitachi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Питание:</legend>
-          <input type="radio" id="battery" name="power-supply" value="battery" checked>
-          <label for="battery">Аккумуляторные</label>
-          <input type="radio" id="network" name="power-supply" value="network">
-          <label for="network">Сетевые</label>
+          <ul>
+            <li>
+              <input type="radio" id="battery" name="power-supply" value="battery" checked>
+              <label for="battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" id="network" name="power-supply" value="network">
+              <label for="network">Сетевые</label>
+            </li>
+          </ul>
         </fieldset>
         <button type="submit">Показать</button>
       </form>
@@ -105,19 +134,19 @@
         <h3>Сортировка</h3>
         <ul>
           <li>
-            <a href="">По цене</a>
+            <a href="" aria-label="Сортировка товаров по цене">По цене</a>
           </li>
           <li>
-            <a href="">По типу</a>
+            <a href="" aria-label="Сортировка товаров по типу">По типу</a>
           </li>
           <li>
-            <a href="">По функционалу</a>
+            <a href="" aria-label="Сортировка товаров по функционалу">По функционалу</a>
           </li>
           <li>
-            <a href="">Снизу вверз</a>
+            <a href="" aria-label="Порядок сортировки снизу вверх">Снизу вверх</a>
           </li>
           <li>
-            <a href="">Сверху вниз</a>
+            <a href="" aria-label="Порядок сортировки сверху вниз">Сверху вниз</a>
           </li>
         </ul>
       </div>
@@ -244,16 +273,16 @@
 
       <ul class="paging">
         <li>
-          <a href="">1</a>
+          <a href="" aria-label="На первую страницу с товарами">1</a>
         </li>
         <li>
-          <a href="">2</a>
+          <a href="" aria-label="На вторую страницу с товарами">2</a>
         </li>
         <li>
-          <a href="">3</a>
+          <a href="" aria-label=" На третью страницу с товарами">3</a>
         </li>
         <li>
-          <a href="">Следующая</a>
+          <a href="" aria-label="На следующую страницу с товарами">Следующая</a>
         </li>
       </ul>
 
@@ -271,12 +300,30 @@
       </p>
     </article>
 
+    <!-- Popup Add to cart -->
+    <section class="popup visually-hidden">
+      <h2 class="visually-hidden">Окно подтверждения</h2>
+
+      <button type="button" aria-label="Закрыть форму">
+        <img src="img/icon-cross.svg" alt="X">
+      </button>
+
+      <p>Товар добавлен в корзину!</p>
+
+      <a href="blank.html">Оформить заказ</a>
+
+      <button type="button">Продолжить покупки</button>
+
+    </section>
+
   </main>
 
   <footer class="main-footer">
 
     <div class="footer-top">
-      <a href="index.html"><img src="img/logo.png" width="220" height="68" alt="Логотип Техномарт"></a>
+      <a href="index.html" aria-label="На главную страницу">
+        <img src="img/logo.png" width="220" height="68" alt="Логотип Техномарт">
+      </a>
 
       <ul class="footer-nav-top">
         <li><a href="blank.html">Компания</a></li>
@@ -293,7 +340,7 @@
       </ul>
 
       <section>
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
           +7 (812) 555-55-55
@@ -307,7 +354,7 @@
         Все права защищены
       </p>
       <section>
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social">
           <li>
             <a href="#">Вконтакте</a>
