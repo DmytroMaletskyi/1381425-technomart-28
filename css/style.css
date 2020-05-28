@@ -30,37 +30,6 @@
   --old-price: #A9A9A9;
   --button-click: #518534;
   --light-grey: linear-gradient(#FFFFFF, #EAEAEA);
-
-  /* Fonts */
-
-  --paragraph-1: 13px;
-  --paragraph-1-height: 24px;
-  --paragraph-2: 18px;
-  --paragraph-2-height: 24px;
-  --paragraph-3: 16px;
-  --paragraph-3-height: 18px;
-  --header-2: 30px;
-  --header-2-height: 30px;
-  --header-4: 21px;
-  --header-4-height: 30px;
-  --header-5: 13px;
-  --header-5-height: 18px;
-  --caption: 14px;
-  --caption-height: 24px;
-  --button: 14px;
-  --button-height: 18px;
-  --authorized-user: 21px;
-  --authorized-user-height: 21px;
-  --filter: 13px;
-  --filter-height: 18px;
-  --filter-legend: 17px;
-  --filter-legend-height: 30px;
-  --filter-item: 15px;
-  --filter-item-height: 19px;
-  --price: 17px;
-  --price-height: 18px;
-  --bold-paragraph: 18px;
-  --bold-paragraph-height: 20px;
 }
 
 /* Global */
@@ -90,8 +59,8 @@ img {
 }
 
 .top-menu {
-  font-size: var(--paragraph-2, 18px);
-  line-height: var(--paragraph-2-height, 24px);
+  font-size: 18px;
+  line-height: 24px;
   color: var(--white, #FFFFFF);
   background-color: var(--basic-grey, #243949);
 }
@@ -121,25 +90,48 @@ img {
   color: inherit;
 }
 
-.top-menu svg {
+.search svg {
   opacity: 30%;
 }
 
-.search:hover svg,
-.bookmarks:hover svg,
-.cart:hover svg {
+.search:hover svg {
   opacity: 100%;
 }
 
-.bookmarks:active p,
-.cart:active p {
-  color: rgba(255, 255, 255, 0.5);
-  background-color: var(--basic-darkgrey, #161D29);
+.bookmarks::before {
+  content: url("../img/icon-bookmark.svg");
+  opacity: 0.3;
 }
 
-.bookmarks:active svg,
-.cart:active svg {
-  opacity: 30%;
+.bookmarks:hover::before {
+  content: url("../img/icon-bookmark.svg");
+  opacity: 1;
+}
+
+.bookmarks:active::before {
+  content: url("../img/icon-bookmark.svg");
+  opacity: 0.3;
+}
+
+.cart::before {
+  content: url("../img/icon-cart.svg");
+  opacity: 0.3;
+}
+
+.cart:hover::before {
+  content: url("../img/icon-cart.svg");
+  opacity: 1;
+}
+
+.cart:active::before {
+  content: url("../img/icon-cart.svg");
+  opacity: 0.3;
+}
+
+.bookmarks:active,
+.cart:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-darkgrey, #161D29);
 }
 
 .top-menu .order-link {
@@ -159,13 +151,14 @@ img {
 .main-header i {
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
   color: var(--basic-red, #EE3643);
 }
 
 .phone-number {
-  font-size: var(--header-4, 21px);
+  font-size: 21px;
   font-weight: bold;
-  line-height: var(--header-4-height, 30px);
+  line-height: 30px;
   color: var(--basic-red, #EE3643);
   border: 3px var(--white, #FFFFFF) solid;
 
@@ -175,8 +168,8 @@ img {
 }
 
 .address {
-  font-size: var(--caption, 14px);
-  line-height: var(--caption-height, 24px);
+  font-size: 14px;
+  line-height: 24px;
   color: var(--caption-grey, #32435C);
 }
 
@@ -219,8 +212,8 @@ img {
 }
 
 .authorized-user p {
-  font-size: var(--authorized-user, 21px);
-  line-height: var(--authorized-user-height, 21px);
+  font-size: 21px;
+  line-height: 21px;
   background-color: var(--white, #FFFFFF);
 }
 
@@ -242,8 +235,8 @@ img {
 }
 
 .user-links a {
-  font-size: var(--paragraph-3, 16px);
-  line-height: var(--paragraph-3-height, 18px);
+  font-size: 16px;
+  line-height: 18px;
   color: var(--caption-grey, #32425C);
 }
 
@@ -274,8 +267,8 @@ img {
 }
 
 .main-navigation a {
-  font-size: var(--paragraph-2, 18px);
-  line-height: var(--paragraph-2-height, 24px);
+  font-size: 18px;
+  line-height: 24px;
   color: var(--white, #FFFFFF);
 }
 
@@ -291,22 +284,22 @@ img {
 /* Index */
 
 .index-columns h2 {
-  font-size: var(--header-2, 30px);
-  line-height: var(--header-2-height, 30px);
+  font-size: 30px;
+  line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .index-columns p {
-  font-size: var(--paragraph-1, 13px);
-  line-height: var(--paragraph-1-height, 24px);
+  font-size: 13px;
+  line-height: 24px;
   font-family: "PT Sans", sans-serif;
 }
 
 .red-button {
   font-family: "Cuprum", sans-serif;
-  font-size: var(--button, 14px);
-  line-height: var(--button-height, 18px);
+  font-size: 14px;
+  line-height: 18px;
   color: var(--white, #FFFFFF);
   background-color: var(--basic-red, #EE3643);
   border: none;
@@ -322,8 +315,8 @@ img {
 }
 
 .features li {
-  font-size: var(--paragraph-2, 18px);
-  line-height: var(--paragraph-2-height, 24px);
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .features li::before {
@@ -343,8 +336,8 @@ img {
 
 .breadcrumbs a {
   font-family: "PT Sans", sans-serif;
-  font-size: var(--header-5, 13px);
-  line-height: var(--header-5-height, 18px);
+  font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
   color: var(--black, #000000);
 }
@@ -359,8 +352,8 @@ img {
 }
 
 .page-heading {
-  font-size: var(--header-2, 30px);
-  line-height: var(--header-2-height, 30px);
+  font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   color: var(--caption-grey, #32425C);
   background-color: var(--heading-background, #F2F6F8);
@@ -373,8 +366,8 @@ img {
 }
 
 .filter h2 {
-  font-size: var(--filter, 13px);
-  line-height: var(--filter-height, 18px);
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: var(--filter-background, #F3F7EC);
@@ -390,8 +383,8 @@ img {
 }
 
 .filter legend {
-  font-size: var(--filter-legend, 17px);
-  line-height: var(--filter-legend-height, 30px);
+  font-size: 17px;
+  line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -401,8 +394,8 @@ img {
 }
 
 .filter label {
-  font-size: var(--filter-item, 15px);
-  line-height: var(--filter-item-height, 19px);
+  font-size: 15px;
+  line-height: 19px;
   text-transform: uppercase;
 }
 
@@ -468,8 +461,9 @@ img {
 }
 
 .filter button {
-  font-size: var(--filter, 13px);
-  line-height: var(--filter-height, 18px);
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: var(--white, #FFFFFF);
@@ -491,8 +485,8 @@ img {
 }
 
 .card.new span:nth-child(2) {
-  font-size: var(--button, 14px);
-  line-height: var(--button-height, 18px);
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   color: var(--white, #FFFFFF);
   background-color: var(--basic-red, #EE3643);
@@ -500,9 +494,9 @@ img {
 
 .product-cards p {
   font-family: "PT Sans", sans-serif;
-  font-size: var(--price, 17px);
+  font-size: 17px;
   font-weight: 700;
-  line-height: var(--price-height, 18px);
+  line-height: 18px;
 }
 
 .old-price {
@@ -518,8 +512,8 @@ img {
 
 .card h3 {
   font-family: "PT Sans", sans-serif;
-  font-size: var(--bold-paragraph, 18px);
-  line-height: var(--bold-paragraph-height, 20px);
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
 }
 
@@ -536,8 +530,8 @@ img {
 }
 
 .card-buttons button {
-  font-size: var(--button, 14px);
-  line-height: var(--button-height, 18px);
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .buy-button span::before {
@@ -546,8 +540,8 @@ img {
 }
 
 .buy-button {
-  font-size: var(--button, 14px);
-  line-height: var(--button-height, 18px);
+  font-size: 14px;
+  line-height: 18px;
   color: var(--white, #FFFFFF);
   text-transform: uppercase;
   background-color: var(--basic-green, #63A63E);
@@ -563,8 +557,8 @@ img {
 }
 
 .card-buttons button:not(.buy-button) {
-  font-size: var(--button, 14px);
-  line-height: var(--button-height, 18px);
+  font-size: 14px;
+  line-height: 18px;
   color: var(--caption-grey, #32425C);
   text-transform: uppercase;
   background-color: var(--white, #FFFFFF);
@@ -582,8 +576,8 @@ img {
 /* Footer */
 
 .main-footer {
-  font-size: var(--paragraph-2, 18px);
-  line-height: var(--paragraph-2-height, 24px);
+  font-size: 18px;
+  line-height: 24px;
   background-color: var(--caption-grey, #32425C);
 }
 
@@ -619,8 +613,8 @@ img {
 }
 
 .footer-bottom p {
-  font-size: var(--paragraph-3, 16px);
-  line-height: var(--paragraph-3-height, 18px);
+  font-size: 16px;
+  line-height: 18px;
   color: var(--white, #FFFFFF);
 }
 
