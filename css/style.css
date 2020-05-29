@@ -148,7 +148,8 @@ img {
   background-color: var(--basic-green, #63A63E);
 }
 
-.main-header i {
+.top-menu + p {
+  width: 197px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
