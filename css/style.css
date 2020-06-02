@@ -11,6 +11,7 @@
   --black: #000000;
 
   --special-yellow: #FFBF47;
+  --special-yellow-2: #FFC047;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
@@ -29,6 +30,9 @@
   --checkbox-active: #B5B5B5;
   --old-price: #A9A9A9;
   --button-click: #518534;
+  --index-header: #F9F5F0;
+  --send-request: #FF5357;
+  --paging-border: #E5E5E5;
   --light-grey: linear-gradient(#FFFFFF, #EAEAEA);
 }
 
@@ -459,6 +463,176 @@ img {
 
 /* Index */
 
+/* Promo */
+
+.promo-card p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--white, #FFFFFF);
+}
+
+.promo-card.new span {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white, #FFFFFF);
+  text-transform: uppercase;
+
+  background-color: var(--basic-red, #EE3643);
+}
+
+.promo-card:not(.new) span {
+  display: none;
+}
+
+.promo-card a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white, #FFFFFF);
+  text-transform: uppercase;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.promo-card a:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.promo-card a:active {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+.promo-card.materials {
+  background-color: var(--special-yellow, #FFBF47);
+}
+
+.promo-card.instruments {
+  background-color: var(--special-blue, #3BBCE3);
+}
+
+.promo-card.equipment {
+  background-color: var(--special-lilac, #DC91D8);
+}
+
+.promo-card.discounts {
+  background-color: var(--special-greenlight, #8ED78F);
+}
+
+.promo-card.shipment {
+  background-color: var(--special-yellow-2, #FFC047);
+}
+
+.promo-slide h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--white, #FFFFFF);
+}
+
+.promo-slide p {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white, #FFFFFF);
+}
+
+.index-header {
+  background-color: var(--index-header, #F9F5F0);
+}
+
+.index-header h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: var(--caption-grey, #32425C);
+}
+
+.popular-goods ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.producers {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.producers a:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producers a:active {
+  opacity: 0.5;
+}
+
+.services-section h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.services-section p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.slider-tabs {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.slider-tabs button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--white, #FFFFFF);
+  background-color: var(--caption-grey, #32425C);
+  border: none;
+}
+
+.slider-tabs button:not(.selected):hover {
+  background-color: var(--nav-hover, #293449);
+}
+
+.slider-tabs button.selected {
+  color: var(--caption-grey, #32425C);
+  background-color: var(--white, #FFFFFF);
+}
+
+.service-slide h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--caption-grey, #32425C);
+}
+
+.service-slide button {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white, #FFFFFF);
+  background-color: var(--send-request, #FF5357);
+
+  border: none;
+  border-radius: 2px;
+}
+
+.service-slide button:active {
+  background-color: var(--error, #BA2732);
+}
+
 .index-columns {
   display: flex;
   justify-content: space-between;
@@ -637,7 +811,7 @@ img {
   justify-content: flex-start;
   align-items: center;
 
-  /* margin-bottom: 28px; */
+  background-color: var(--filter-background, #F3F7EC);
 }
 
 .sorting h3 {
@@ -660,6 +834,46 @@ img {
   margin: 0;
 }
 
+.sorting a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted var(--basic-red, #EE3643);
+}
+
+.sorting a:hover {
+  color: var(--black, #000000);
+  border-bottom: 1px solid var(--basic-red, #EE3643);
+}
+
+.sorting a:active,
+.sorting a.selected {
+  color: var(--basic-red, #EE3643);
+  border-bottom: none;
+}
+
+.sorting-order a,
+.sorting-order a:hover,
+.sorting-order a:active,
+.sorting-order a.selected {
+  border: none;
+}
+
+.sorting-order a:hover path {
+  fill: var(--black, #000000);
+}
+
+.sorting-order a:active path,
+.sorting-order a.selected path {
+  fill: var(--basic-red, #EE3643);
+}
+
+.sorting-order li:last-of-type {
+  transform: rotateX(180deg);
+}
+
 .page-catalog article:last-of-type {
   grid-column-start: 1;
   grid-column-end: -1;
@@ -672,6 +886,45 @@ img {
   list-style: none;
 
   padding: 0;
+}
+
+.paging a {
+  display: block;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black, #000000);
+
+  border: 1px solid var(--paging-border, #E5E5E5);
+}
+
+.paging a:hover {
+  border: 1px solid var(--basic-greylight, #C5C5C5);
+}
+
+.paging a:active {
+  border: 1px solid var(--basic-red, #EE3643);
+}
+
+.paging a.selected {
+  color: var(--white, #FFFFFF);
+  background-color: var(--basic-red, #EE3643);
+  border-radius: 2px;
+}
+
+.about-perforators h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-perforators p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
 }
 
 /* Filter */
@@ -982,6 +1235,7 @@ img {
 }
 
 .card-buttons button {
+  font-family: "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -1214,4 +1468,34 @@ a:active .icon-background {
 
 .popup {
   display: none;
+  position: absolute;
+}
+
+.popup-contact-us label {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popup-contact-us input::placeholder,
+.popup-contact-us textarea::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--old-price, #A9A9A9)
+}
+
+.popup-to-cart p{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.popup-to-cart button:last-of-type {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: var(--white, #FFFFFF);
 }

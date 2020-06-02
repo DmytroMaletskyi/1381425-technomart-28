@@ -119,40 +119,40 @@
       <h2 class="visually-hidden">Промо</h2>
       <ul>
         <li>
-          <div>
-            <span class="new">New</span>
+          <div class="promo-card materials new">
+            <span>New</span>
             <p>Материалы</p>
             <a href="blank.html" aria-label="На страницу с материалами">На любой вкус</a>
             <img src="https://via.placeholder.com/44x65" alt="Иконка ведра">
           </div>
         </li>
         <li>
-          <div>
-            <span class="new">New</span>
+          <div class="promo-card instruments">
+            <span>New</span>
             <p>Инструменты</p>
             <a href="blank.html" aria-label="На страницу с инструментами">На все случаи</a>
             <img src="https://via.placeholder.com/75x61" alt="Иконка дрели">
           </div>
         </li>
         <li>
-          <div>
-            <span class="new">New</span>
+          <div class="promo-card equipment">
+            <span>New</span>
             <p>Техника</p>
             <a href="blank.html" aria-label="На страницу с техникой">Для стройки</a>
             <img src="https://via.placeholder.com/78x62" alt="Иконка трактора">
           </div>
         </li>
         <li>
-          <div>
-            <span class="new">New</span>
+          <div class="promo-card discounts">
+            <span>New</span>
             <p>Скидки 50%</p>
             <a href="blank.html" aria-label="На страницу со скидочными товарами">На 350 товаров</a>
             <img src="https://via.placeholder.com/59x72" alt="Иконка тележки">
           </div>
         </li>
         <li>
-          <div>
-            <span class="new">New</span>
+          <div class="promo-card shipment">
+            <span>New</span>
             <p>Доставка</p>
             <a href="blank.html" aria-label="На страницу о доставке">Бесплатно</a>
             <img src="https://via.placeholder.com/78x63" alt="Иконка машины">
@@ -169,7 +169,7 @@
               <p>Настоящие мужские игрушки</p>
             </div>
             <img src="img/promo-perforator.jpg" width="620" height="266" alt="Мужчина с перфоратором Bosch">
-            <a href="catalog.html">Открыть каталог</a>
+            <a class="red-button" href="catalog.html">Открыть каталог</a>
           </article>
         </div>
 
@@ -180,7 +180,7 @@
               <p>Соседям на радость!</p>
             </div>
             <img src="img/promo-drill.jpg" width="620" height="266" alt="Мужчина с дрелью Bosch">
-            <a href="catalog.html">Открыть каталог</a>
+            <a class="red-button" href="catalog.html">Открыть каталог</a>
           </article>
         </div>
 
@@ -195,46 +195,52 @@
       </div>
     </section>
 
-    <section class="container">
-      <header>
+    <section class="popular-goods container">
+      <header class="index-header">
         <h2>Популярные товары:</h2>
-        <a href="blank.html">Все популярные товары</a>
+        <a class="red-button" href="blank.html">Все популярные товары</a>
       </header>
 
       <ul>
         <li>
-          <article>
-            <img src="img/bfg-9000.jpg" width="184" height="164" alt="Синий перфоратор Bosch BFG-9000">
-            <span class="new">New</span>
-            <div class="card-buttons">
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+          <article class="card">
+            <div class="card-top">
+              <img src="img/bfg-9000.jpg" width="144" height="128" alt="Синий перфоратор Bosch BFG-6000">
+              <span>New</span>
+              <div class="card-buttons">
+                <button class="buy-button" type="button"><span>Купить</span></button>
+                <button type="button">В закладки</button>
+              </div>
             </div>
             <h3>Перфоратор Bosch BFG 9000</h3>
-            <p class="old-price">32500 Р.</p>
+            <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/bfg-3000.jpg" width="127" height="112" alt="Синий перфоратор Bosch BFG-3000">
-            <span class="new">New</span>
-            <div class="card-buttons">
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+          <article class="card new">
+            <div class="card-top">
+              <img src="img/bfg-3000.jpg" width="144" height="128" alt="Синий перфоратор Bosch BFG-6000">
+              <span>New</span>
+              <div class="card-buttons">
+                <button class="buy-button" type="button"><span>Купить</span></button>
+                <button type="button">В закладки</button>
+              </div>
             </div>
             <h3>Перфоратор Bosch BFG 3000</h3>
-            <p class="old-price">22500 Р.</p>
-            <p class="new-price">15500 Р.</p>
+            <p class="old-price">30500 Р.</p>
+            <p class="new-price">25500 Р.</p>
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/bfg-6000.jpg" width="144" height="128" alt="Синий перфоратор Bosch BFG-6000">
-            <span class="new">New</span>
-            <div class="card-buttons">
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+          <article class="card">
+            <div class="card-top">
+              <img src="img/bfg-6000.jpg" width="144" height="128" alt="Синий перфоратор Bosch BFG-6000">
+              <span>New</span>
+              <div class="card-buttons">
+                <button class="buy-button" type="button"><span>Купить</span></button>
+                <button type="button">В закладки</button>
+              </div>
             </div>
             <h3>Перфоратор Bosch BFG 6000</h3>
             <p class="old-price">30500 Р.</p>
@@ -242,28 +248,30 @@
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/bfg-3000.jpg" width="127" height="112" alt="Синий перфоратор Bosch BFG-2000">
-            <span class="new">New</span>
-            <div class="card-buttons">
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+          <article class="card new">
+            <div class="card-top">
+              <img src="img/bfg-3000.jpg" width="144" height="128" alt="Синий перфоратор Bosch BFG-6000">
+              <span>New</span>
+              <div class="card-buttons">
+                <button class="buy-button" type="button"><span>Купить</span></button>
+                <button type="button">В закладки</button>
+              </div>
             </div>
             <h3>Перфоратор Bosch BFG 2000</h3>
             <p class="old-price"></p>
-            <p class="new-price">12500 Р.</p>
+            <p class="new-price">25500 Р.</p>
           </article>
         </li>
       </ul>
     </section>
 
-    <section class="container">
-      <header>
+    <section class="popular-producers container">
+      <header class="index-header">
         <h2>Популярные производители:</h2>
-        <a href="blank.html">Все производители</a>
+        <a class="red-button" href="blank.html">Все производители</a>
       </header>
 
-      <ul>
+      <ul class="producers">
         <li>
           <a href="blank.html" aria-label="Товары компании Bosch">
             <img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch">
@@ -307,7 +315,7 @@
       </ul>
     </section>
 
-    <section class="container">
+    <section class="services-section container">
       <h2>Сервисы</h2>
       <p>
         Хороший интернет-магазин отличается от плохого не только ценами!
@@ -315,7 +323,7 @@
       </p>
       <ul class="slider-tabs">
         <li>
-          <button type="button">Доставка</button>
+          <button class="selected" type="button">Доставка</button>
         </li>
         <li>
           <button type="button">Гарантия</button>
@@ -499,7 +507,7 @@
   </section>
 
   <!-- Popup Contact Us -->
-  <section class="popup visually-hidden">
+  <section class="popup popup-contact-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
 
     <button type="button" aria-label="Закрыть форму">
@@ -519,7 +527,7 @@
         <label for="letter">Текст письма:</label>
         <textarea id="letter" name="letter" placeholder="В свободной форме" required></textarea>
       </p>
-      <button type="submit">Оформить заказ</button>
+      <button class="red-button" type=" submit">Оформить заказ</button>
     </form>
 
   </section>
