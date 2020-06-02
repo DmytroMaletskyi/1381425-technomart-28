@@ -193,7 +193,7 @@
         <h3>Сортировка:</h3>
         <ul>
           <li>
-            <a href="" aria-label="Сортировка товаров по цене">По цене</a>
+            <a class="selected" href="" aria-label="Сортировка товаров по цене">По цене</a>
           </li>
           <li>
             <a href="" aria-label="Сортировка товаров по типу">По типу</a>
@@ -202,10 +202,22 @@
             <a href="" aria-label="Сортировка товаров по функционалу">По функционалу</a>
           </li>
           <li>
-            <a href="" aria-label="Порядок сортировки снизу вверх">Снизу вверх</a>
-          </li>
-          <li>
-            <a href="" aria-label="Порядок сортировки сверху вниз">Сверху вниз</a>
+            <ul class="sorting-order">
+              <li>
+                <a class="selected" href="" aria-label="Порядок сортировки снизу вверх">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" aria-label="Порядок сортировки сверху вниз">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -350,7 +362,7 @@
 
       <ul class="paging">
         <li>
-          <a href="" aria-label="На первую страницу с товарами">1</a>
+          <a class="selected" href="" aria-label="На первую страницу с товарами">1</a>
         </li>
         <li>
           <a href="" aria-label="На вторую страницу с товарами">2</a>
@@ -365,7 +377,7 @@
 
     </section>
 
-    <article>
+    <article class="about-perforators">
       <div class="container">
         <h2>Пара слов о перфораторах</h2>
         <p>
@@ -476,7 +488,7 @@
   </footer>
 
   <!-- Popup Add to cart -->
-  <section class="popup visually-hidden">
+  <section class="popup popup-to-cart">
     <h2 class="visually-hidden">Окно подтверждения</h2>
 
     <button type="button" aria-label="Закрыть форму">
@@ -485,7 +497,7 @@
 
     <p>Товар добавлен в корзину!</p>
 
-    <a href="blank.html">Оформить заказ</a>
+    <a class="red-button" href="blank.html">Оформить заказ</a>
 
     <button type="button">Продолжить покупки</button>
 
