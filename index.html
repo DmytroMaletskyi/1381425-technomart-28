@@ -21,21 +21,21 @@
 
         <p class="search">
           <label for="search">
+            <span class="visually-hidden">Поиск:</span>
+            <input type="search" id="search" name="search" placeholder="Поиск:">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 fill="white" />
             </svg>
-            <span class="visually-hidden">Поиск:</span>
           </label>
-          <input type="search" id="search" name="search" placeholder="Поиск:">
         </p>
 
-        <a class="bookmarks" href="blank.html" aria-label="На страницу с закладками">
+        <a class="bookmarks empty" href="blank.html" aria-label="На страницу с закладками">
           Закладки: 0
         </a>
 
-        <a class="cart" href="blank.html" aria-label="На страницу с корзиной">
+        <a class="cart empty" href="blank.html" aria-label="На страницу с корзиной">
           Корзина: 0
         </a>
 
@@ -44,13 +44,14 @@
     </div>
 
     <div class="middle-menu container">
-      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p>Интернет-магазин строительных материалов <br>
+        и инструментов для ремонта</p>
 
       <section class="header-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p>
-          <span class="phone-number">+7 (812) 555-55-55</span>
-          <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</span>
+          <span class="phone-number">+7 (812) 555-05-55</span>
+          <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
       </section>
 
@@ -405,14 +406,14 @@
     <div class="footer-top container">
       <div class="left-footer">
         <a class="logo">
-          <img src="img/logo.svg" width="138" height="23" alt="Логотип Техномарт">
+          <img src="img/footer-logo.svg" width="138" height="23" alt="Логотип Техномарт">
         </a>
 
         <section>
           <h2 class="visually-hidden">Контактная информация</h2>
           <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
-            +7 (812) 555-55-55
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            +7 (812) 555-05-55
           </p>
         </section>
       </div>
@@ -437,7 +438,7 @@
     <div class="footer-bottom">
       <div class="container">
         <p>
-          &copy; 2010-2019 Компания «Техномарт»
+          &copy; 2010&ndash;2019 Компания «Техномарт»
           Все права защищены
         </p>
         <section>
@@ -492,46 +493,50 @@
     </div>
   </footer>
 
-  <!-- Popup Map -->
-  <section class="popup popup-map">
-    <h2 class="visually-hidden">Карта</h2>
 
-    <button type="button" aria-label="Закрыть форму">
-      <img src="img/icon-cross.svg" alt="X">
-    </button>
+  <div class="popup-wrapper">
+    <!-- Popup Map -->
+    <section class="popup popup-map">
+      <h2 class="visually-hidden">Карта</h2>
 
-    <img src="img/map-big.png" alt="Карта с адресом магазина (Большая Конюшенная ул., 19)">
-  </section>
+      <button type="button" aria-label="Закрыть форму">
+        <img src="img/icon-cross.svg" alt="X">
+      </button>
 
-  <!-- Popup Contact Us -->
-  <section class="popup popup-contact-us">
-    <h2 class="visually-hidden">Форма обратной связи</h2>
+      <img src="img/map-big.png" alt="Карта с адресом магазина (Большая Конюшенная ул., 19)">
+    </section>
 
-    <button type="button" aria-label="Закрыть форму">
-      <img src="img/icon-cross.svg" alt="X">
-    </button>
+    <!-- Popup Contact Us -->
 
-    <form action="https://echo.htmlacademy.ru/" method="POST">
-      <div class="popup-main">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" id="email" name="email" placeholder="email@example.com" required>
-        </p>
-        <p class="letter-section">
-          <label for="letter">Текст письма:</label>
-          <textarea id="letter" name="letter" placeholder="В свободной форме" required></textarea>
-        </p>
-      </div>
-      <div class="popup-contact-us-footer">
-        <button class="red-button" type=" submit">Отправить</button>
-      </div>
-    </form>
+    <section class="popup popup-contact-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
 
-  </section>
+      <button type="button" aria-label="Закрыть форму">
+        <img src="img/icon-cross.svg" alt="X">
+      </button>
+
+      <form action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="popup-main">
+          <p>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          </p>
+          <p class="letter-section">
+            <label for="letter">Текст письма:</label>
+            <textarea id="letter" name="letter" placeholder="В свободной форме" required></textarea>
+          </p>
+        </div>
+        <div class="popup-contact-us-footer">
+          <button class="red-button" type="submit">Отправить</button>
+        </div>
+      </form>
+
+    </section>
+  </div>
 
 </body>
 
