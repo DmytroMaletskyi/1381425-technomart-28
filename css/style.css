@@ -1347,9 +1347,13 @@ img {
   margin-left: 25px;
 }
 
+.producer label,
+.power-supply label {
+  position: relative;
+}
+
 .producer input,
 .power-supply input {
-  position: relative;
   -webkit-appearance: none;
 }
 
@@ -1361,57 +1365,61 @@ img {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.producer input::before {
+.producer label::before {
   position: absolute;
-  top: -13px;
-  left: -2px;
+  top: 0px;
+  left: -35px;
+  width: 27px;
+  height: 25px;
   content: url("../img/icon-checkbox-off.svg");
 }
 
-.producer input:hover::before {
+.producer input:hover + label::before {
   content: url("../img/icon-checkbox-off-hovered.svg");
 }
 
-.producer input:disabled::before {
+.producer input:disabled + label::before {
   content: url("../img/icon-checkbox-off-blocked.svg");
 }
 
-.producer input:checked::before {
+.producer input:checked + label::before {
   content: url("../img/icon-checkbox-on.svg");
 }
 
-.producer input:checked:hover::before {
+.producer input:checked:hover + label::before {
   content: url("../img/icon-checkbox-on-hovered.svg");
 }
 
-.producer input:checked:disabled::before {
+.producer input:checked:disabled + label::before {
   content: url("../img/icon-checkbox-on-blocked.svg");
 }
 
-.power-supply input::before {
+.power-supply label::before {
   position: absolute;
-  top: -18px;
-  left: -5px;
+  top: -5px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
   content: url("../img/icon-radio-off.svg");
 }
 
-.power-supply input:hover::before {
+.power-supply input:hover + label::before {
   content: url("../img/icon-radio-off-hovered.svg");
 }
 
-.power-supply input:disabled::before {
+.power-supply input:disabled + label::before {
   content: url("../img/icon-radio-off-blocked.svg");
 }
 
-.power-supply input:checked::before {
+.power-supply input:checked + label::before {
   content: url("../img/icon-radio-on.svg");
 }
 
-.power-supply input:checked:hover::before {
+.power-supply input:checked:hover + label::before {
   content: url("../img/icon-radio-on-hovered.svg");
 }
 
-.power-supply input:checked:disabled::before {
+.power-supply input:checked:disabled + label::before {
   content: url("../img/icon-radio-on-blocked.svg");
 }
 
