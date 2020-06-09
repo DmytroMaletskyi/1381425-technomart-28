@@ -118,75 +118,81 @@
 
     <section class="promo-section container">
       <h2 class="visually-hidden">Промо</h2>
-      <!-- <ul> -->
-      <!-- <li> -->
       <div class="promo-card materials new">
         <span>New</span>
         <p>Материалы</p>
         <a href="blank.html" aria-label="На страницу с материалами">На любой вкус</a>
       </div>
-      <!-- </li> -->
-      <!-- <li> -->
       <div class="promo-card instruments">
         <span>New</span>
-        <p>Инструменты</p>
+        <p>Инструмент</p>
         <a href="blank.html" aria-label="На страницу с инструментами">На все случаи</a>
       </div>
-      <!-- </li> -->
-      <!-- <li> -->
       <div class="promo-card equipment">
         <span>New</span>
         <p>Техника</p>
         <a href="blank.html" aria-label="На страницу с техникой">Для стройки</a>
       </div>
-      <!-- </li> -->
-      <!-- <li> -->
       <div class="promo-card discounts">
         <span>New</span>
         <p>Скидки 50%</p>
         <a href="blank.html" aria-label="На страницу со скидочными товарами">На 350 товаров</a>
       </div>
-      <!-- </li> -->
-      <!-- <li> -->
       <div class="promo-card shipment">
         <span>New</span>
         <p>Доставка</p>
         <a href="blank.html" aria-label="На страницу о доставке">Бесплатно</a>
       </div>
-      <!-- </li> -->
-      <!-- </ul> -->
 
       <div class="promo-slider">
 
-        <div class="promo-slide">
-          <article>
-            <div class="card-header">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-            </div>
-            <img src="img/promo-perforator.jpg" width="620" height="266" alt="Мужчина с перфоратором Bosch">
-            <a class="red-button" href="catalog.html">Открыть каталог</a>
-          </article>
-        </div>
+        <ul class="slider-list">
+          <li class="promo-slide slide-current">
+            <article>
+              <div class="slide-header">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+              <img src="img/promo-perforator.jpg" width="620" height="266" alt="Мужчина с перфоратором Bosch">
+              <a class="red-button" href="catalog.html">Открыть каталог</a>
+            </article>
+          </li>
 
-        <div class="promo-slide visually-hidden">
-          <article>
-            <div class="card-header">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-            </div>
-            <img src="img/promo-drill.jpg" width="620" height="266" alt="Мужчина с дрелью Bosch">
-            <a class="red-button" href="catalog.html">Открыть каталог</a>
-          </article>
-        </div>
+          <li class="promo-slide">
+            <article>
+              <div class="slide-header">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+              </div>
+              <img src="img/promo-drill.jpg" width="620" height="266" alt="Мужчина с дрелью Bosch">
+              <a class="red-button" href="catalog.html">Открыть каталог</a>
+            </article>
+          </li>
+        </ul>
 
-        <button type="button" disabled>Назад</button>
-        <button type="button">Вперед</button>
+        <button class="slider-button" type="button" aria-label="Следующий слайд">
+          <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.07568 39.0586L0.0775054 37.0108L17.0931 19.564L0.0220266 2.06249L2.02116 0.0146899L21.0894 19.564L2.07568 39.0586Z"
+              fill="white" />
+          </svg>
+        </button>
+        <button class="slider-button" type="button" aria-label="Предыдущий слайд" disabled>
+          <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.07568 39.0586L0.0775054 37.0108L17.0931 19.564L0.0220266 2.06249L2.02116 0.0146899L21.0894 19.564L2.07568 39.0586Z"
+              fill="white" />
+          </svg>
+        </button>
 
-        <div class="slider-dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+        <ul class="slider-dots">
+          <li>
+            <button type="button" aria-label="Первый слайд"></button>
+          </li>
+          <li>
+            <button class="current" type="button" aria-label="Второй слайд"></button>
+          </li>
+        </ul>
 
       </div>
     </section>
@@ -208,7 +214,7 @@
                 <button type="button">В закладки</button>
               </div>
             </div>
-            <h3>Перфоратор Bosch BFG 9000</h3>
+            <h3>Перфоратор BOSCH BFG 9000</h3>
             <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
           </article>
@@ -223,7 +229,7 @@
                 <button type="button">В закладки</button>
               </div>
             </div>
-            <h3>Перфоратор Bosch BFG 3000</h3>
+            <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
           </article>
@@ -238,7 +244,7 @@
                 <button type="button">В закладки</button>
               </div>
             </div>
-            <h3>Перфоратор Bosch BFG 6000</h3>
+            <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
           </article>
@@ -253,7 +259,7 @@
                 <button type="button">В закладки</button>
               </div>
             </div>
-            <h3>Перфоратор Bosch BFG 2000</h3>
+            <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="old-price"></p>
             <p class="new-price">25500 Р.</p>
           </article>
@@ -322,7 +328,7 @@
         <div class="services-slider">
           <ul class="slider-tabs">
             <li>
-              <button class="selected" type="button">Доставка</button>
+              <button class="selected-tab" type="button">Доставка</button>
             </li>
             <li>
               <button type="button">Гарантия</button>
@@ -334,12 +340,12 @@
 
           <div class="service-slides">
 
-            <div class="service-slide">
+            <div class="service-slide current">
               <article>
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
+                  к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем, <br>
                   поднимая его на ваш этаж!
                 </p>
               </article>
@@ -349,7 +355,7 @@
               <article>
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит,
-                  а также в случае пожара, провоцированного его
+                  а также в случае пожара, спровоцированного его
                   возгоранием, вы всегда можете быть уверены в нашей
                   гарантии. Мы обменяем сгоревший товар на новый.
                   Дом уж восстановите как-нибудь сами.
