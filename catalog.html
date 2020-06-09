@@ -138,12 +138,24 @@
           oninput="bottomoutput.value=bottom.value; topoutput.value=top.value">
           <fieldset class="price">
             <legend>Цена:</legend>
-            <label class="visually-hidden" for="bottom">Установка нижней черты ценового диапазона</label>
-            <input type="range" id="bottom" name="bottom" min="0" max="35000" value="0">
-            <label class="visually-hidden" for="top">Установка верхней черты ценового диапазона</label>
-            <input type="range" id="top" name="top" min="0" max="35000" value="30000">
-            <output name="bottomoutput">0</output> -
-            <output name="topoutput">30000</output>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 85%; margin-left: 0;"></div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: calc(0% - 10px);"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: calc(85% - 10px);"></div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price" aria-label="Минимальная цена">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <span>&mdash;</span>
+                <label class="max-price" aria-label="Максимальная цена">
+                  <input type="number" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="producer">
             <legend>Производители:</legend>
