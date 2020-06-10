@@ -760,11 +760,14 @@ img {
   display: block;
 }
 
-.slide-header {
+.promo-slide img {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+}
 
+.slide-header {
   box-sizing: border-box;
   width: 100%;
 
@@ -773,6 +776,8 @@ img {
   padding-top: 24px;
   padding-bottom: 16px;
   padding-left: 24px;
+
+  margin-bottom: 105px;
 }
 
 .promo-slide h3 {
@@ -795,7 +800,6 @@ img {
 }
 
 .promo-slide .red-button {
-  position: absolute;
   bottom: 35px;
   left: 25px;
   box-sizing: border-box;
@@ -803,6 +807,9 @@ img {
   padding-right: 46px;
   padding-bottom: 9px;
   padding-left: 46px;
+
+  margin-bottom: 27px;
+  margin-left: 24px;
 }
 
 .index-header {
