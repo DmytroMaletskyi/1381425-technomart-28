@@ -780,6 +780,11 @@ img {
   margin-bottom: 105px;
 }
 
+.promo-slide article {
+  width: 620px;
+  height: 266px;
+}
+
 .promo-slide h3 {
   font-size: 36px;
   font-weight: 700;
@@ -808,7 +813,6 @@ img {
   padding-bottom: 9px;
   padding-left: 46px;
 
-  margin-bottom: 27px;
   margin-left: 24px;
 }
 
