@@ -7,6 +7,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -19,7 +20,7 @@
           <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
         </a>
 
-        <p class="search">
+        <form class="search">
           <label for="search">
             <span class="visually-hidden">Поиск:</span>
             <input type="search" id="search" name="search" placeholder="Поиск:">
@@ -29,7 +30,7 @@
                 fill="white" />
             </svg>
           </label>
-        </p>
+        </form>
 
         <a class="bookmarks empty" href="blank.html" aria-label="На страницу с закладками">
           Закладки: 0
@@ -50,7 +51,7 @@
       <section class="header-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p>
-          <span class="phone-number">+7 (812) 555-05-55</span>
+          <a href="tel:+78125550555" class="phone-number">+7 (812) 555-05-55</a>
           <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
       </section>
@@ -420,7 +421,7 @@
           <h2 class="visually-hidden">Контактная информация</h2>
           <p>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            +7 (812) 555-05-55
+            <a href="tel:+78125550555" class="footer-phone">+7 (812) 555-05-55</a>
           </p>
         </section>
       </div>
@@ -500,24 +501,24 @@
     </div>
   </footer>
 
-  <div class="popup-wrapper">
-    <!-- Popup Add to cart -->
-    <section class="popup popup-to-cart">
-      <h2 class="visually-hidden">Окно подтверждения</h2>
 
-      <button class="cross-button" type="button" aria-label="Закрыть форму">
-        <img src="img/icon-cross.svg" alt="X">
-      </button>
+  <!-- Popup Add to cart -->
+  <section class="popup popup-to-cart">
+    <h2 class="visually-hidden">Окно подтверждения</h2>
 
-      <p>Товар добавлен в корзину!</p>
+    <button class="cross-button" type="button" aria-label="Закрыть форму">
+      <img src="img/icon-cross.svg" width="21" height="21" alt="X">
+    </button>
 
-      <div class="popup-to-cart-footer">
-        <a class="red-button" href="blank.html">Оформить заказ</a>
+    <p>Товар добавлен в корзину!</p>
 
-        <button type="button">Продолжить покупки</button>
-      </div>
-    </section>
-  </div>
+    <div class="popup-to-cart-footer">
+      <a class="red-button" href="blank.html">Оформить заказ</a>
+
+      <button type="button">Продолжить покупки</button>
+    </div>
+  </section>
+
 </body>
 
 </html>
