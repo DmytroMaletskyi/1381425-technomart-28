@@ -331,14 +331,6 @@ img {
   align-items: flex-start;
 }
 
-.logged-out .authorized-user {
-  display: none;
-}
-
-.logged-in .login-section {
-  display: none;
-}
-
 .login-link,
 .registration-link {
   font-size: 21px;
