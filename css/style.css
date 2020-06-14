@@ -1180,7 +1180,7 @@ img {
   padding-right: 739px;
   padding-bottom: 30px;
   padding-left: 29px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .catalog-section {
@@ -1195,10 +1195,9 @@ img {
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
-  justify-content: space-between;
   background-color: var(--filter-background, #F3F7EC);
-  padding-top: 5px;
-  padding-right: 17px;
+  padding-top: 7px;
+  /* padding-right: 17px; */
   padding-left: 19px;
 }
 
@@ -1208,32 +1207,30 @@ img {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-top: 5px;
+  padding-top: 3px;
+  padding-left: 1px;
   margin: 0;
   margin-right: 140px;
 }
 
-.sorting ul {
+.sorting-type {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 46px;
 }
 
-.sorting li:first-of-type {
+.sorting-type li:first-of-type {
   margin-right: 70px;
 }
 
-.sorting li:nth-of-type(2) {
-  margin-right: 65px;
+.sorting-type li:nth-of-type(2) {
+  margin-right: 66px;
 }
 
-.sorting li:nth-of-type(3) {
-  margin-right: 30px;
-}
-
-.sorting a {
+.sorting-type a {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1242,31 +1239,44 @@ img {
   border-bottom: 1px dotted var(--basic-red, #EE3643);
 }
 
-.sorting a:hover {
+.sorting-type a:hover {
   color: var(--black, #000000);
   border-bottom: 1px solid var(--basic-red, #EE3643);
 }
 
-.sorting a:active,
-.sorting a.selected {
+.sorting-type a:active,
+.sorting-type a.selected {
   color: var(--basic-red, #EE3643);
   border-bottom: none;
 }
 
 .sorting-order {
-  position: relative;
-  width: 50px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting-order li {
-  position: absolute;
-  top: 1px;
-  left: 18px;
+  position: relative;
 }
 
-.sorting-order li:last-of-type {
-  top: -1px;
-  left: 50px;
+.sorting-order li:first-of-type {
+  margin-right: 32px;
+}
+
+.sorting-order .down-up {
+  position: absolute;
+  top: 1px;
+}
+
+.up-down svg {
+  transform: rotateX(180deg);
+}
+
+.sorting-order .up-down {
+  position: absolute;
+  top: 1px;
 }
 
 .sorting-order a,
@@ -1283,10 +1293,6 @@ img {
 .sorting-order a:active path,
 .sorting-order a.selected path {
   fill: var(--basic-red, #EE3643);
-}
-
-.sorting-order li:last-of-type {
-  transform: rotateX(180deg);
 }
 
 .page-catalog article:last-of-type {
@@ -1340,7 +1346,7 @@ img {
 
 .about-perforators {
   padding-top: 64px;
-  padding-bottom: 68px;
+  padding-bottom: 70px;
 }
 
 .about-perforators h2 {
@@ -1383,7 +1389,7 @@ img {
   padding-bottom: 10px;
   padding-left: 18px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .filter fieldset {
@@ -1398,7 +1404,7 @@ img {
 }
 
 .filter fieldset:nth-of-type(2) {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .filter legend {
@@ -1419,7 +1425,7 @@ img {
 }
 
 .power-supply legend {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .range-controls {
@@ -1519,15 +1525,15 @@ img {
 }
 
 .producer li {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .producer li:last-of-type {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .power-supply li {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .power-supply li:last-of-type {
