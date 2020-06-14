@@ -760,6 +760,10 @@ img {
   margin-bottom: 20px;
 }
 
+.popular-goods .index-header {
+  padding-right: 15px;
+}
+
 .index-header h2 {
   font-size: 30px;
   font-weight: 400;
@@ -1007,7 +1011,7 @@ img {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 68px;
+  margin-bottom: 71px;
 }
 
 .index-columns h2 {
@@ -1192,10 +1196,10 @@ img {
   grid-row-end: 2;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: var(--filter-background, #F3F7EC);
-  padding-left: 19px;
+  padding-top: 5px;
   padding-right: 17px;
+  padding-left: 19px;
 }
 
 .sorting h3 {
@@ -1204,6 +1208,7 @@ img {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-top: 5px;
   margin: 0;
   margin-right: 140px;
 }
@@ -1335,7 +1340,7 @@ img {
 
 .about-perforators {
   padding-top: 64px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 }
 
 .about-perforators h2 {
@@ -1841,9 +1846,9 @@ img {
   justify-content: space-between;
 }
 
-.left-footer {
-  width: 325px;
-}
+/* .left-footer {
+  margin-right: 10px;
+} */
 
 .footer-phone {
   font-family: inherit;
@@ -1857,7 +1862,7 @@ img {
   padding: 0;
   padding-top: 20px;
   padding-left: 41px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .footer-top img {
@@ -1871,15 +1876,18 @@ img {
 
 .footer-top p {
   color: var(--footer-address, #F3F7F9);
+  width: 326px;
   margin: 0;
   margin-bottom: 54px;
+  margin-left: 3px;
 }
 
 .right-footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 550px;
+  width: 547px;
+  box-sizing: border-box;
 }
 
 .right-footer ul {
@@ -1964,13 +1972,14 @@ img {
   display: flex;
   justify-content: space-between;
   width: 133px;
+  padding: 0;
   margin-top: 34px;
-  margin-right: 118px;
+  margin-right: 120px;
   margin-bottom: 29px;
 }
 
-.social {
-  padding: 0;
+.social li {
+  margin-right: 1px;
 }
 
 .footer-bottom a {
