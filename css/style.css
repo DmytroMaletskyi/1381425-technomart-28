@@ -1257,26 +1257,12 @@ img {
   margin: 0;
 }
 
-.sorting-order li {
-  position: relative;
-}
-
 .sorting-order li:first-of-type {
-  margin-right: 32px;
-}
-
-.sorting-order .down-up {
-  position: absolute;
-  top: 1px;
+  margin-right: 20px;
 }
 
 .up-down svg {
   transform: rotateX(180deg);
-}
-
-.sorting-order .up-down {
-  position: absolute;
-  top: 1px;
 }
 
 .sorting-order a,
@@ -1763,7 +1749,7 @@ img {
 
 .card .card-buttons {
   display: none;
-  margin-top: 16px;
+  margin-top: 13px;
 }
 
 .card:hover {
@@ -1851,10 +1837,6 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
-/* .left-footer {
-  margin-right: 10px;
-} */
 
 .footer-phone {
   font-family: inherit;
