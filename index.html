@@ -136,14 +136,14 @@
             </article>
           </li>
         </ul>
-        <button class="slider-button" type="button" aria-label="Следующий слайд">
+        <button class="slider-button next-button" type="button" aria-label="Следующий слайд">
           <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.07568 39.0586L0.0775054 37.0108L17.0931 19.564L0.0220266 2.06249L2.02116 0.0146899L21.0894 19.564L2.07568 39.0586Z"
               fill="white" />
           </svg>
         </button>
-        <button class="slider-button" type="button" aria-label="Предыдущий слайд" disabled>
+        <button class="slider-button previous-button" type="button" aria-label="Предыдущий слайд">
           <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.07568 39.0586L0.0775054 37.0108L17.0931 19.564L0.0220266 2.06249L2.02116 0.0146899L21.0894 19.564L2.07568 39.0586Z"
@@ -152,10 +152,10 @@
         </button>
         <ul class="slider-dots">
           <li>
-            <button type="button" aria-label="Первый слайд"></button>
+            <button class="first-button current" type="button" aria-label="Первый слайд"></button>
           </li>
           <li>
-            <button class="current" type="button" aria-label="Второй слайд"></button>
+            <button class="second-button" type="button" aria-label="Второй слайд"></button>
           </li>
         </ul>
       </div>
@@ -289,17 +289,17 @@
         <div class="services-slider">
           <ul class="slider-tabs">
             <li>
-              <button class="selected-tab" type="button">Доставка</button>
+              <button class="shipment-button selected-tab" type="button">Доставка</button>
             </li>
             <li>
-              <button type="button">Гарантия</button>
+              <button class="guarantee-button" type="button">Гарантия</button>
             </li>
             <li>
-              <button type="button">Кредит</button>
+              <button class="credit-button" type="button">Кредит</button>
             </li>
           </ul>
-          <div class="service-slides">
-            <div class="service-slide current">
+          <ul class="service-slides">
+            <li class="service-slide shipment-slide current">
               <article>
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо
@@ -308,8 +308,8 @@
                   поднимая его на ваш этаж!
                 </p>
               </article>
-            </div>
-            <div class="service-slide">
+            </li>
+            <li class="service-slide guarantee-slide">
               <article>
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит,
@@ -319,8 +319,8 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </article>
-            </div>
-            <div class="service-slide">
+            </li>
+            <li class="service-slide credit-slide">
               <article>
                 <h3>Кредит</h3>
                 <p>Залезть в долговую яму стало проще!
@@ -328,8 +328,8 @@
                 </p>
                 <button type="button">Отправить заявку</button>
               </article>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
     </div>

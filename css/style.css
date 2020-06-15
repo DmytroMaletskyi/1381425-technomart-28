@@ -916,6 +916,9 @@ img {
 
 .service-slides {
   width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .service-slide {
@@ -1197,7 +1200,6 @@ img {
   display: flex;
   background-color: var(--filter-background, #F3F7EC);
   padding-top: 7px;
-  /* padding-right: 17px; */
   padding-left: 19px;
 }
 
@@ -1215,7 +1217,6 @@ img {
 
 .sorting-type {
   display: flex;
-  /* flex-grow: 1; */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1493,7 +1494,7 @@ img {
 }
 
 .price-controls input {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
   appearance: textfield;
 }
 
