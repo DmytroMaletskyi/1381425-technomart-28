@@ -7,18 +7,18 @@ buyButtons.forEach(item => {
   item.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.add("popup-show");
-  })
-})
+  });
+});
 
 cartCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.remove("popup-show");
-})
+});
 
 continueShoppingButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.remove("popup-show");
-})
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

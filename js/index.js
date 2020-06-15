@@ -8,6 +8,10 @@ let letterField = document.querySelector(".popup-contact-us textarea");
 let mapButton = document.querySelector(".contact-section img");
 let mapPopup = document.querySelector(".popup-map");
 let mapCloseButton = document.querySelector(".popup-map button");
+let buyButtons = document.querySelectorAll(".buy-button");
+let cartPopup = document.querySelector(".popup-to-cart");
+let cartCloseButton = document.querySelector(".popup-to-cart .cross-button");
+let continueShoppingButton = document.querySelector(".popup-to-cart-footer button");
 
 // Checking if localStorage is supported
 
@@ -53,7 +57,7 @@ contactUsForm.addEventListener("submit", function (evt) {
       localStorage.setItem("email", emailField.value);
     }
   }
-})
+});
 
 contactUsCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -71,7 +75,26 @@ mapButton.addEventListener("click", function (evt) {
 mapCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("popup-show");
-})
+});
+
+// Cart Popup
+
+buyButtons.forEach(item => {
+  item.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("popup-show");
+  });
+});
+
+cartCloseButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("popup-show");
+});
+
+continueShoppingButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("popup-show");
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -82,6 +105,9 @@ window.addEventListener("keydown", function (evt) {
     } else if (mapPopup.classList.contains("popup-show")) {
       evt.preventDefault();
       mapPopup.classList.remove("popup-show");
+    } else if (cartPopup.classList.contains("popup-show")) {
+      evt.preventDefault();
+      cartPopup.classList.remove("popup-show");
     }
   }
 });
