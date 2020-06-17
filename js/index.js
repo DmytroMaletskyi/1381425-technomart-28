@@ -62,28 +62,6 @@ previousButton.addEventListener("click", function (evt) {
   sliderDots[currentIndex].classList.add("current");
 });
 
-// let dotIndex = 0;
-
-// sliderDots.forEach(item => {
-//   item.addEventListener("click", function (evt) {
-//     evt.preventDefault();
-//     if (!item.classList.contains("current")) {
-//       sliderDots.forEach(item => {
-//         if (item.classList.contains("current")) {
-//           item.classList.remove("current");
-//         }
-//       });
-//       promoSlides.forEach(item => {
-//         if (item.classList.contains("slide-current")) {
-//           item.classList.remove("slide-current");
-//         }
-//       });
-//       item.classList.add("current");
-//       promoSlides[dotIndex].classList.add("slide-current");
-//     }
-//   });
-// })
-
 firstDot.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (!firstDot.classList.contains("current")) {
