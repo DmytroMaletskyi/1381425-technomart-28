@@ -1135,6 +1135,8 @@ img {
 
 .contact-section .red-button {
   width: 100%;
+  box-sizing: border-box;
+  padding-left: 62px;
 }
 
 /* Catalog */
