@@ -1553,11 +1553,6 @@ img {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.producer input:focus + label::before,
-.power-supply input:focus + label::before {
-  outline: 1px solid black;
-}
-
 .producer label::before {
   position: absolute;
   top: 0px;
@@ -1567,6 +1562,7 @@ img {
   content: url("../img/icon-checkbox-off.svg");
 }
 
+.producer input:focus + label::before,
 .producer input:hover + label::before {
   content: url("../img/icon-checkbox-off-hovered.svg");
 }
@@ -1579,6 +1575,7 @@ img {
   content: url("../img/icon-checkbox-on.svg");
 }
 
+.producer input:checked:focus + label::before,
 .producer input:checked:hover + label::before {
   content: url("../img/icon-checkbox-on-hovered.svg");
 }
@@ -1596,6 +1593,7 @@ img {
   content: url("../img/icon-radio-off.svg");
 }
 
+.power-supply input:focus + label::before,
 .power-supply input:hover + label::before {
   content: url("../img/icon-radio-off-hovered.svg");
 }
@@ -1608,6 +1606,7 @@ img {
   content: url("../img/icon-radio-on.svg");
 }
 
+.power-supply input:checked:focus + label::before,
 .power-supply input:checked:hover + label::before {
   content: url("../img/icon-radio-on-hovered.svg");
 }
@@ -1999,9 +1998,9 @@ a:active .icon-background {
   height: 1px;
   width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap; /* added line */
+  white-space: nowrap;
 }
 
 .popup {
