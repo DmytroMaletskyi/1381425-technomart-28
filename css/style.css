@@ -38,6 +38,18 @@
   --toggle-center: #ABABAB;
   --toggle-shadow: #CFCFCF;
   --red-button-hover: #CA2C37;
+  --logo-box-shadow: rgba(0, 0, 0, 0.24);
+  --white-one-third: rgba(255, 255, 255, 0.3);
+  --white-half-transparent: rgba(255, 255, 255, 0.5);
+  --black-one-tenth: rgba(0, 0, 0, 0.1);
+  --black-quarter-transparent: rgba(0, 0, 0, 0.25);
+  --black-one-third: rgba(0, 0, 0, 0.3);
+  --black-four-tenth: rgba(0, 0, 0, 0.4);
+  --promo-card-hover: rgba(197, 197, 197, 0.3);
+  --promo-card-active: rgba(169, 169, 169, 0.3);
+  --producers-shadow: rgba(0, 0, 0, 0.15);
+  --slider-tabs-shadow: #405069;
+  --to-bookmarks-active: rgba(50, 66, 92, 0.5);
   --light-grey: linear-gradient(#FFFFFF, #EAEAEA);
 }
 
@@ -108,7 +120,7 @@ img {
   width: 220px;
   height: 52px;
   background-color: var(--basic-red, #EE3643);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--logo-box-shadow, rgba(0, 0, 0, 0.24));
   padding-top: 17px;
   padding-right: 57px;
   padding-left: 55px;
@@ -245,7 +257,7 @@ img {
 
 .bookmarks:active,
 .cart:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white-half-transparent, rgba(255, 255, 255, 0.5));
   background-color: var(--basic-darkgrey, #161D29);
 }
 
@@ -327,7 +339,7 @@ img {
 .address {
   font-size: 14px;
   line-height: 24px;
-  color: var(--caption-grey, #32435C);
+  color: var(--caption-grey, #32425C);
   margin-bottom: 41px;
 }
 
@@ -511,7 +523,7 @@ img {
 
 .main-navigation a:active {
   background-color: var(--nav-active, #1D2739);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white-half-transparent, rgba(255, 255, 255, 0.5));
 }
 
 /* Index */
@@ -599,7 +611,7 @@ img {
   line-height: 18px;
   color: var(--white, #FFFFFF);
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--white-one-third, rgba(255, 255, 255, 0.3));
   width: 135px;
   height: 38px;
   padding-top: 10px;
@@ -608,11 +620,11 @@ img {
 }
 
 .promo-card a:hover {
-  background-color: rgba(197, 197, 197, 0.3);
+  background-color: var(--promo-card-hover, rgba(197, 197, 197, 0.3));
 }
 
 .promo-card a:active {
-  background-color: rgba(169, 169, 169, 0.3);
+  background-color: var(--promo-card-active, rgba(169, 169, 169, 0.3));
 }
 
 .promo-card.materials {
@@ -713,13 +725,13 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: var(--basic-greylight);
+  background-color: var(--basic-greylight, #C5C5C5);
 }
 
 .slide-header {
   box-sizing: border-box;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--black-quarter-transparent, rgba(0, 0, 0, 0.25));
   padding-top: 24px;
   padding-bottom: 16px;
   padding-left: 24px;
@@ -836,7 +848,7 @@ img {
 }
 
 .producers a:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--producers-shadow, rgba(0, 0, 0, 0.15));
 }
 
 .producers a:active {
@@ -908,7 +920,7 @@ img {
   line-height: 30px;
   color: var(--white, #FFFFFF);
   background-color: var(--caption-grey, #32425C);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-grey, #293449), inset 0px 1px 0px var(--slider-tabs-shadow, #405069);
   border: none;
   padding: 0;
   padding-left: 22px;
@@ -1221,7 +1233,7 @@ img {
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
-  background-color: var(--filter-background, #F3F7EC);
+  background-color: var(--filter-background, #F7F3EC);
   padding-top: 7px;
   padding-left: 19px;
 }
@@ -1259,7 +1271,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--black-one-third, rgba(0, 0, 0, 0.3));
   border-bottom: 1px dotted var(--basic-red, #EE3643);
 }
 
@@ -1393,7 +1405,7 @@ img {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  background-color: var(--filter-background, #F3F7EC);
+  background-color: var(--filter-background, #F7F3EC);
   padding-top: 10px;
   padding-right: 151px;
   padding-bottom: 10px;
@@ -1409,7 +1421,7 @@ img {
 }
 
 .filter fieldset:not(:last-of-type) {
-  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  border-bottom: 1px var(--black-one-tenth, rgba(0, 0, 0, 0.1)) solid;
   margin-bottom: 16px;
 }
 
@@ -1568,11 +1580,11 @@ img {
 }
 
 .producer input:disabled + label {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--black-four-tenth, rgba(0, 0, 0, 0.4));
 }
 
 .power-supply input:disabled + label {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--black-four-tenth, rgba(0, 0, 0, 0.4));
 }
 
 .producer label::before {
@@ -1644,7 +1656,7 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   background-color: var(--white, #FFFFFF);
-  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border: 1px var(--black-one-tenth, rgba(0, 0, 0, 0.1)) solid;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1775,7 +1787,7 @@ img {
 }
 
 .card:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--producers-shadow, rgba(0, 0, 0, 0.15));
 }
 
 .card:hover .card-buttons {
@@ -1842,7 +1854,7 @@ img {
 }
 
 .card-buttons button:not(.buy-button):active {
-  border-color: rgba(50, 66, 92, 0.5);
+  border-color: var(--to-bookmarks-active, rgba(50, 66, 92, 0.5));
 }
 
 /* Footer */
@@ -2029,7 +2041,7 @@ a:active .icon-background {
   box-sizing: border-box;
   border-top: 7px solid var(--basic-red, #EE3643);
   background-color: var(--white, #FFFFFF);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--producers-shadow, rgba(0, 0, 0, 0.15));
 }
 
 .popup-contact-us {
