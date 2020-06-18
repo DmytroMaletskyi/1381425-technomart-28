@@ -46,7 +46,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -129,7 +129,7 @@ img {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--white, #FFFFFF);
@@ -865,7 +865,7 @@ img {
 .services-section p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 400px;
   margin: 0;
   margin-bottom: 70px;
@@ -901,7 +901,7 @@ img {
   align-items: center;
   width: 240px;
   height: 61px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -1005,7 +1005,7 @@ img {
   align-items: center;
   width: 195px;
   height: 38px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1040,7 +1040,7 @@ img {
 .index-columns p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .about-section {
@@ -1063,7 +1063,7 @@ img {
 }
 
 .red-button {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1168,7 +1168,7 @@ img {
 }
 
 .breadcrumbs a {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1217,7 +1217,7 @@ img {
 }
 
 .sorting h3 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1245,7 +1245,7 @@ img {
 }
 
 .sorting-type a {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1317,7 +1317,7 @@ img {
   height: 38px;
   width: 38px;
   border: 1px solid var(--paging-border, #E5E5E5);
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1362,14 +1362,14 @@ img {
   width: 908px;
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
 }
 
 /* Filter */
 
 .filter {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -1628,7 +1628,7 @@ img {
 }
 
 .filter button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1713,7 +1713,7 @@ img {
 }
 
 .card p {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1747,7 +1747,7 @@ img {
 }
 
 .card h3 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1780,7 +1780,7 @@ img {
 }
 
 .card-buttons button {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 135px;
@@ -2084,7 +2084,7 @@ a:active .icon-background {
 
 .popup-contact-us input::-webkit-input-placeholder,
 .popup-contact-us textarea::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--old-price, #A9A9A9);
@@ -2093,7 +2093,7 @@ a:active .icon-background {
 
 .popup-contact-us input::-moz-placeholder,
 .popup-contact-us textarea::-moz-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--old-price, #A9A9A9);
@@ -2101,7 +2101,7 @@ a:active .icon-background {
 
 .popup-contact-us input::placeholder,
 .popup-contact-us textarea::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--old-price, #A9A9A9);
@@ -2217,7 +2217,7 @@ a:active .icon-background {
   box-sizing: border-box;
   width: 192px;
   height: 38px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
