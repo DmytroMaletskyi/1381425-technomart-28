@@ -1404,7 +1404,7 @@ img {
 }
 
 .filter fieldset:nth-of-type(2) {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .filter legend {
@@ -1421,11 +1421,11 @@ img {
 }
 
 .producer legend {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .power-supply legend {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .range-controls {
@@ -1567,7 +1567,7 @@ img {
 
 .producer label::before {
   position: absolute;
-  top: 0px;
+  top: -2px;
   left: -35px;
   width: 27px;
   height: 25px;
@@ -1598,7 +1598,7 @@ img {
 
 .power-supply label::before {
   position: absolute;
-  top: -5px;
+  top: -3px;
   left: -35px;
   width: 25px;
   height: 25px;
