@@ -37,6 +37,7 @@
   --bar-color: #00CA74;
   --toggle-center: #ABABAB;
   --toggle-shadow: #CFCFCF;
+  --red-button-hover: #CA2C37;
   --light-grey: linear-gradient(#FFFFFF, #EAEAEA);
 }
 
@@ -1018,6 +1019,10 @@ img {
   margin-top: 28px;
 }
 
+.service-slide button:hover {
+  background-color: var(--red-button-hover, #CA2C37);
+}
+
 .service-slide button:active {
   background-color: var(--error, #BA2732);
 }
@@ -1072,6 +1077,11 @@ img {
   border: none;
   padding-top: 11px;
   padding-bottom: 9px;
+}
+
+.red-button:hover {
+  background-color: var(--red-button-hover, #CA2C37);
+  outline: none;
 }
 
 .red-button:active {
